@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>东极岛</title>
+<style>
+body {
+	background-color: #EDEDED;
+}
+#title {
+	position: absolute;
+	font-size: 60px;
+	margin-left: 6%;
+	opacity: 0.5;
+	margin-top: 10px;
+}
+#title1 {
+	position: absolute;
+	font-size: 40px;
+	margin-left: 22%;
+	opacity: 0.5;
+	margin-top: 40px;
+	z-index: 30;
+}
+#a1 {
+	width: 800px;
+	height: 570px;
+	background-color: #000000;
+	opacity: 0.2;
+	position: absolute;
+	margin-left: 26%;
+	margin-top: 10px;
+}
+#a2 {
+	position: absolute;
+	width: 800px;
+	height: 500px;
+	background-color: #FAF9F9;
+	margin-left: 32%;
+	margin-top: 50px;
+	opacity: 0.9;
+}
+#w1 {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	margin-left: 49%;
+	margin-top: 100px;
+	opacity: 0.7;
+	font-size: 18px;
+	line-height: 26px;
+}
+#s1 {
+	font-size: 25px;
+	line-height: 30px;
+	opacity: 0.8;
+	font-family: kaiti;
+}
+#s2 {
+	font-size: 25px;
+	line-height: 30px;
+	opacity: 0.8;
+	font-family: kaiti;
+}
+#s3 {
+	font-size: 25px;
+	line-height: 30px;
+	opacity: 0.8;
+	font-family: kaiti;
+}
+#tu1 {
+	position: absolute;
+	z-index: 20;
+	margin-left: 2%;
+	margin-top: 100px;
+	opacity: 0.94;
+}
+#wh {
+	display: none;
+}
+#ly {
+	display: none;
+}
+#dhl1 {
+	height: 30px;
+	width: 100%;
+	list-style-type: none;
+}
+ul li {
+	float: right;
+	margin-left: 20px;
+}
+a:link {
+	text-decoration: none;
+	color: black;
+	opacity: 0.8;
+	font-size: 30px;
+}
+a:visited {
+	text-decoration: none;
+	color: black;
+	opacity: 0.5;
+}
+#a:hover {
+	transform: scale(0.8, 0.8);
+	transition-duration: 0.5s;
+}
+#b:hover {
+	transform: scale(0.8, 0.8);
+	transition-duration: 0.5s;
+}
+#c:hover {
+transform: scale(0.8, 0.8);
+transition-duration: 0.5s;
+}
+#p1 {
+	font-family: kaiti;
+	font-size: 16px;
+}
+#p2 {
+	font-family: kaiti;
+	font-size: 16px;
+}
+#p3 {
+	font-family: kaiti;
+	font-size: 16px;
+}
+#title2 {
+	position: absolute;
+	font-size: 70px;
+	margin-top: 440px;
+	margin-left: 60%;
+	
+}
+	#title3 {
+	position: absolute;
+	font-size: 70px;
+	margin-top: 440px;
+	margin-left: 70%;
+	
+}
+</style>
+<script type="text/javascript">
+function change_div(id){
+if (id == 'wh' )
+{
+document.getElementById("dlwz").style.display = 'none' ;
+document.getElementById("wh").style.display = 'block' ;
+document.getElementById("ly").style.display='none';
+}
+if(id=='dlwz')
+{
+document.getElementById("wh").style.display = 'none' ;
+document.getElementById("dlwz").style.display = 'block' ;
+document.getElementById("ly").style.display='none';
+}
+if(id=='ly')
+{
+document.getElementById("wh").style.display = 'none' ;
+document.getElementById("dlwz").style.display = 'none' ;
+document.getElementById("ly").style.display='block';
+}	
+}
+</script>
+</head>
+<body>
+<div id="title">东极岛</div>
+<div id="title1">DONGJI ISLAND</div>
+<div id="a1"></div>
+<div id="a2"></div>
+<div id="w1">
+  <div id="button">
+    <ul id="dhl1">
+      <li id="a"><a href="#" onclick="change_div('dlwz')">地理位置</a></li>
+      <li id="b"><a href="#" onclick="change_div('wh')">文化</a></li>
+      <li id="c"><a href="#" onclick="change_div('ly')">旅游</a></li>
+    </ul>
+  </div>
+  <div id="dlwz"> <span id="s1">
+    <p>地理位置</p>
+    </span>
+    <p id="p1">东至两兄弟屿接东海（12海里外为公海），南至黄大洋接洋鞍渔场，西至岱巨洋，北至嵊山渔场，陆域面积为11.7平方公里，海域面积约500平方公里，共有28个大小岛屿和108块礁组成。其中庙子湖、青浜、黄兴、东福山为四个住人岛，庙子湖岛陆域面积为2.638平方公里，青浜岛陆域面积为1.408平方公里，黄兴岛陆域面积为2.437平方公里，东福山陆域面积2.953平方公里，镇政府驻庙子湖岛，下辖一个社区一个村四个经济合作社。</p>
+  </div>
+  <div id="wh" > <span id="s2">
+    <p>文化</p>
+    </span>
+    <p id="p2">1999年10月被浙江省文化厅命名为“浙江东海明珠工程”和被舟山市命名为“海岛百花工程”。庙子湖建有文化中心楼，内有图书室等娱乐设施。2009年7月，原文化中心楼改建成东极历史文化博物馆，分为里斯本丸沉船事件纪念馆、民俗民风馆和渔民画展厅。随着旅游业的开发，进一步挖掘渔家文化，特别是带动了东极渔民画的发展，现拥有一支有10人组成的渔民画创作队伍，渔民画作品多次在省、市乃至全国获奖，“东极渔民画”在国内外和艺术界都享有一定的知名度。</p>
+  </div>
+  <div id="ly"> <span id="s3">
+    <p>旅游</p>
+    </span>
+    <p id="p3">东极镇相对方兴未艾的旅游时尚来说，简直就是一块尚未开垦的处女地。东极因有着优越独特的地理位置、美不胜收的极地风光、丰富多样的礁贝资源、古朴浓郁的渔家文化而备受旅游业行家的推崇，东极山石风光独树一帜，东极海面景况跌宕起伏，东极海洋文化原始清新，实为过惯了喧嚣的城市生活的人们理想的旅游休闲之胜地。</p>
+  </div>
+</div>
+<div id="tu1"><img src="d/1.jpg" width="550" height="440" alt=""/></div>
+<div id="title2"><a href="index.html"><img src="d/5.jpg" width="65" height="65" alt=""/></a></div>
+<div id="title3"><a href="huaniaodao.html"><img src="d/6.jpg" width="65" height="65" alt=""/></a></div>
+</body>
+</html>
