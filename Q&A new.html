@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>问答Q & A</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style type="text/css">
+.demo{width:30%; height: 25%;margin:7% 0 0 40%;position: absolute;
+		float:left;background-color:#E4D3D3;border-radius: 20px;}
+#d1{width: 30%;
+		height: 60%;
+		margin-top: 5%;
+		margin-left: 15%;
+		position: absolute;
+		float:left;}
+#d1 img:hover{transform: scale(1.2,1.2);
+		transition-duration: 0.5s;}
+</style>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript">
+var init={'questions':[{'question':'舟山群岛位于中国哪个省市？','answers':['浙江省','江苏省','河北省','以上都不是'],'correctAnswer':1},{'question':'以下哪个岛属于舟山群岛中的岛屿呢？','answers':['马布岛','月亮岛','青浜岛','邦邦岛'],'correctAnswer':3},{'question':'前面介绍了什么舟山的传统文化呢？','answers':['跳蚤会','舟山走书','渔民祭海','以上都不是'],'correctAnswer':2},{'question':'东极岛的什么文化在国内外享有知名度？','answers':['“海岛百花工程”','“浙江东海明珠工程”','“东极渔民画”','以上都不是'],'correctAnswer':3},{'question':'青浜岛上海派建筑被称为什么? ','answers':['“海上灵庙”','“海上石头庙”','“海上大佛”','“海上布达拉宫”'],'correctAnswer':4},{'question':'花鸟岛位於嵊泗列岛的什么方位? ','answers':['北面','东面','南面','西面'],'correctAnswer':1},{'question':'花鸟岛上最为著名的景观是什么？ ','answers':['猿猴洞','花鸟灯塔','老虎洞','以上都不是'],'correctAnswer':2},{'question':'舟山群岛的海岸潮汐属于什么类型? ','answers':['全日潮','混合的不正规半日潮','半日潮','以上都不是'],'correctAnswer':3}]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body style="background-color: #DEDEDE;">
+	<div id="d1"><a href="choose.html"><img src="images/character2.png" style="height: 500px;width: 400px;" /></a></div>
+<div class="demo">
+	<div id='quiz-container'></div>
+</div>
+</body>
+</html>
